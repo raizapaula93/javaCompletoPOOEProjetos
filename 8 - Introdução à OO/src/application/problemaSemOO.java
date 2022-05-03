@@ -3,17 +3,21 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Triangle;
+
 public class problemaSemOO {
 
 	public static void main(String[] args) {
 		
-		double xA, xB, xC, yA, yB, yC;
+		Triangle x,y;
+		x = new Triangle();
+		y = new Triangle();
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter the measures of triangle X: ");
-		xA = sc.nextDouble();
+		x.a = sc.nextDouble();
 		xB = sc.nextDouble();
 		xC = sc.nextDouble();
 		System.out.println("Enter the measures of triangle Y: ");
